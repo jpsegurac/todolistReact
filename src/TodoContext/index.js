@@ -16,6 +16,7 @@ function TodoProvider( { children } ) {
 
   const completedTodos = todos.filter(todo => !!todo.completed).length;
   const totalTodos = todos.length;
+  const remainingTodos = totalTodos - completedTodos;
   
   const SearchedTodos = todos.filter(
     (todo) => {
@@ -57,6 +58,7 @@ function TodoProvider( { children } ) {
       loading,
       error,
       completedTodos,
+      remainingTodos,
       addTodo,
       totalTodos,
       searchValue,
