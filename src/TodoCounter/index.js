@@ -7,7 +7,7 @@ function TodoCounter() {
 	return (
 		<h1 className='TodoCounter'>
 			Have completed <span>{completedTodos}</span> of <span>{ totalTodos }</span> TODOs
-			You need to complete <span>{remainingTodos}</span> to finish.
+			You need to complete <span>{remainingTodos}</span> to finish.sdafa
 		</h1>
 	)
 }
